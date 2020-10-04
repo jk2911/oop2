@@ -16,7 +16,7 @@ namespace _2oop
             {
                 Console.WriteLine("1 - Типы\n2 - Строки\n3 - Массивы\n4 - Кортежи\n5 - Локальные функции\n6 - checked/unchecked\n0 - Выход");
                 num_sw = Convert.ToByte(Console.ReadLine());
-                switch(num_sw)
+                switch (num_sw)
                 {
                     case 1:
                         func1();
@@ -42,6 +42,9 @@ namespace _2oop
                         func6();
                         Console.Clear();
                         break;
+                    default:
+                        Console.Clear();
+                        break;
                 }
             }
         }
@@ -53,7 +56,10 @@ namespace _2oop
             int nt = 10;
             bool bol = false;
             double dbl = 4.678932;
-            Console.WriteLine($"string {str}\nint {nt}\nbool {bol}\ndooble {dbl}\nchar {ch}");
+            float fl = 5.87f;
+            byte bt = 90;
+            sbyte sb = -90;
+            Console.WriteLine($"string {str}\nint {nt}\nbool {bol}\ndooble {dbl}\nchar {ch}\nfloat {fl}\nbyte {bt}\nsbyte {sb}");
 
             Console.WriteLine("\nВведите число: ");
             int x = Convert.ToInt16(Console.ReadLine());
@@ -150,7 +156,7 @@ namespace _2oop
             string nul1 = null;
             string nul2 = "";
             string nul3 = "hell";
-            Console.WriteLine("String.IsNullOrEmpty" + String.IsNullOrEmpty(nul1));
+            Console.WriteLine("String.IsNullOrEmpty " + String.IsNullOrEmpty(nul1));
             Console.WriteLine(String.IsNullOrEmpty(nul2));
             Console.WriteLine(String.IsNullOrEmpty(nul3));
 
